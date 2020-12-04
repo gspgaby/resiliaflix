@@ -26,14 +26,16 @@ h1 {
  }
 
 main {
+    margin: 0;
     background-color: #000000;
     height: 100%;
     justify-content: space-around;
 }
 
 .tamanho {
-    width: 150px;
-    height: 250px;
+    width: 125px;
+    height: 200px;
+    border-radius: 6px;
 }
 
 h2{
@@ -42,19 +44,18 @@ h2{
     color: #FFD700;
 }
 
-footer{
-    left: 0;
-    margin: 0;
+footer{     
+    margin-top: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: #000000;
 }
 
 p {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 0;
     margin-right: 30px;
 }
 
@@ -66,8 +67,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 20%;
-    margin-left: 40%;
+    width: 25%;
+    margin-left: 37%;
 }   
 
 main {
