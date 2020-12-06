@@ -1,3 +1,11 @@
+body {
+    background-color: #1c1c1c;
+}
+
+header{
+    background-color: #000000;
+}
+
 .container {
     display:flex;
     justify-content: space-around;
@@ -9,11 +17,7 @@ li{
     display: inline-flex;
     padding: 20px;
     margin-left: 20px;
-}
-
-nav {
-    background-color: #000000;
- }
+}   
 
 a {
     color: #FFFFFF;
@@ -25,54 +29,96 @@ h1 {
      color: #FFD700;
  }
 
-main {
-    margin: 0;
+button{
     background-color: #000000;
-    height: 100%;
-    justify-content: space-around;
-}
-
-.tamanho {
-    width: 125px;
-    height: 200px;
+    color: #FFD700;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 6px;
 }
-
-h2{
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFD700;
-}
-
-footer{     
-    margin-top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #000000;
-}
-
-p {
-    color: #FFFFFF;
-    text-align: center;
-    margin-top: 0;
-    margin-right: 30px;
-}
-
-.midia {
-    height: 25px;
-}
-
-.alinhamento {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 25%;
-    margin-left: 37%;
-}   
 
 main {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+div.scrollmenu {    
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+div.scrollmenu a {
+    display: inline-block; 
+    padding: 14px;
+}
+
+.tamanho {
+    width: 150px;
+    height: 250px;
+    border-radius: 6px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+footer{
+    background-color: #000000;
+}
+
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemList{
+    color: #FFFFFF;
+}   
+
+.itemList:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.socialmidia {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.midia {
+    height: 15px;
+}
+
+.midia :hover{
+    cursor: pointer;
+}
+
+p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+}
+@media (max-width:425px) {
+    header{
+        position: absolute;
+        bottom: 48px;
+        left: 50px;
+        transform: translateX(50%);
+    }
+    .container{
+        align-items: center;
+        text-align: center;
+     }
+
+    main{
+        align-items: center;
+    }
+
 }
